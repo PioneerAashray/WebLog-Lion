@@ -5,10 +5,10 @@
 	<link rel="shortcut icon" href="http://i.ebayimg.com/images/i/320729352879-0-1/s-l1000.jpg">
 	<title>Lion</title>
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="login.js"></script>
 </head>
 <body>
-	<form id=
+	<form id="login" method=POST>
 		<div id="header">
 			<h1 id='HomeHead'>
 				<a href="index.html" id="homelink">Lion</a>	
@@ -23,13 +23,13 @@
 			<ul>
 				<li>
 					<label for="usermail">Email</label>
-					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+					<input type="text" id="email" name="usermail" placeholder="yourname@email.com" required>
 				</li>
 				<li>
 					<label for="password">Password</label>
-					<input type="password" name="password" placeholder="Password" required></li>
+					<input type="password" name="password" id="pass" placeholder="Password" required></li>
 				<li>
-					<input type="submit" value="Login">
+					<input type="submit" id="login" value="Login">
 				</li>
 			</ul>
 		</form>
